@@ -1,0 +1,5796 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>90 CSS Properties, Values and Browser Support | CSS, JavaScript and XHTML Explained</title>
+  <style type="text/css">
+    body{ font-size: 14px; font-family: "monospace", "Arial"; background-color: #353535; padding: 20px; line-height: 190%; color:#444;}
+    sub{font-size: 9px;}
+    h1{color: #EEE;}
+    table, th, td{ border-collapse: collapse; border: 1px solid #CCC; }
+    th, td{ padding:0.2em .5em;}
+    th{text-align: center;background-color: #dedede;}
+    th.property{text-align: left; color:#0071BC;}
+    th.value{font-weight: normal;color:#666;}
+    th.prop{width: 20%;}
+    th.ver{width: 80px;}
+    th.bw{width: 60px; text-align: center}
+
+    td.good, td.bad, td.almostgood, td.iffy{text-align: center;font-size: 12px;font-weight: 800;color:white;}
+    td.good, span.good{background-color: #009245;}
+    td.almostgood, span.almostgood{background-color: #8CC63F;}
+    td.iffy, span.iffy{background-color: #FB4;}
+    td.bad, span.bad{background-color: #ED1C24;}
+    td.aural{text-align: center;}
+    thead th, tfoot th{background-color: #686868;color: #EEE;}
+    table.cssproperty{background-color: #f3f3f3;}
+    .samples{text-align: right; margin-bottom: 5px;}
+    .samples span{margin-left: 10px;border:1px solid #EEE;padding:1px 5px;font-size: 10px;color: white;}
+  </style>
+</head>
+<body>
+  <h1>CSS Property Values and Browser Support</h1>
+  <div class="samples">
+    <span class="good">GOOD</span>
+    <span class="almostgood">ALMOST GOOD</span>
+    <span class="iffy">IFFY</span>
+    <span class="bad">BAD</span>
+  </div>
+
+  <table class="cssproperty">
+    <thead>
+      <tr>
+        <th scope="col" class="prop">Property</th>
+        <th scope="col" class="ver">CSS Ver</th>
+        <th scope="col" class="val">Default Value</th>
+        <th scope="col" class="bw bw-ie6">IE6</th>
+        <th scope="col" class="bw bw-ie7">IE7</th>
+        <th scope="col" class="bw bw-ie7comp">IE7<sub>comp</sub></th>
+        <th scope="col" class="bw bw-ie8">IE8</th>
+        <th scope="col" class="bw bw-ff3">FF3</th>
+        <th scope="col" class="bw bw-saf">Safari</th>
+        <th scope="col" class="bw bw-op">Opera</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th scope="col">Property</th>
+        <th scope="col">CSS Ver</th>
+        <th scope="col">Default Value</th>
+        <th scope="col">IE6</th>
+        <th scope="col">IE7</th>
+        <th scope="col">IE7<sub>comp</sub></th>
+        <th scope="col">IE8</th>
+        <th scope="col">FF3</th>
+        <th scope="col">Safari</th>
+        <th scope="col">Opera</th>
+        <th scope="col">&nbsp;</th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th class="property" scope="row"><code>azimuth</code></th>
+        <td>Audio</td>
+        <td><code>center</code></td>
+        <td class="aural" colspan="7" rowspan="6">aural</td>
+        <td rowspan="6">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">angle (270deg)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left-side | far-left | left | center-left
+        | center | center-right | right | far-right | right-side</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">behind</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">leftwards | rightwards</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background</code></th>
+        <td>CSS2.1</td>
+        <td><code>transparent none scroll repeat 0% 0%</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>see individual background properties below</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background-attachment</code></th>
+        <td>CSS2.1</td>
+        <td><code>scroll</code></td>
+        <td class="iffy" title="only supported on the body element">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">scroll</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">fixed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">local</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background-color</code></th>
+        <td>CSS2.1</td>
+        <td><code>transparent</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgb()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood">&nbsp;</td>
+        <td class="almostgood">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">#FFFFFF</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">colorName</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood" title="avoid silver">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">transparent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="has trouble with transparent (shows black) on dymanic content">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgba()</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background-image</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url, url</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background-position</code></th>
+        <td>CSS2.1</td>
+        <td><code>0% 0%</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left | top | right | bottom | center</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">px</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">%</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">background-position-x</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">backgroun-position-y</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>background-repeat</code></th>
+        <td>CSS2.1</td>
+        <td><code>repeat</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">repeat</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">no-repeat</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">repeat-x / repeat-y</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">
+          <p><code>border</code></p>
+          <p><code>border-bottom</code>
+          | <code>border-left</code>
+          | <code>border-right</code>
+          | <code>border-top</code></p>
+        </th>
+        <td>CSS2.1</td>
+        <td><code>medium none (current color)</code></td>
+        <td class="iffy" title="gets it wrong in terms of box model and on col">&nbsp;</td>
+        <td class="iffy" title="gets it wrong in terms of box model and on col">&nbsp;</td>
+        <td class="iffy" title="gets it wrong in terms of box model and on col">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td><code>border-width || border-style || border-color</code></td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <code>border-color</code>
+          <p><code>border-bottom-color</code>
+          | <code>border-left-color</code>
+          | <code>border-right-color</code>
+          | <code>border-top-color</code></p>
+        </th>
+        <td>CSS2.1</td>
+        <td><code>(current color)</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgb()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">#CCCCCC</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">colorName</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood" title="avoid the color silver">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">transparent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy" title="acts weird (not always initially transparent) and box model issues">&nbsp;</td>
+        <td class="iffy" title="acts weird (not always initially transparent) and box model issues">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgba()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy" title="doesn't render transparency, but at least renders the border">&nbsp;</td>
+        <td class="iffy" title="doesn't render transparency, but at least renders the border">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <code>border-style</code>
+          <p><code>border-bottom-style</code><br>
+          <code>border-left-style</code><br>
+          <code>border-right-style</code>
+          |<br>
+          <code>border-top-style</code></p>
+        </th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">dashed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">dotted</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">double</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">groove</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="the corners don't meet at 90% like they should">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">hidden</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inset</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="the corners don't meet at 90% like they should">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">outset</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="colors are off on bottom/right">&nbsp;</td>
+        <td class="iffy" title="colors are off on bottom/right">&nbsp;</td>
+        <td class="iffy" title="colors are off on bottom/right">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="the corners don't meet at 90% like they should">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">ridge</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="the corners don't meet at 90% like they should">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">solid</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <p><code>border-width</code></p>
+          <p><code>border-bottom-width</code><br>
+          <br>
+          <code>border-left-width</code><br>
+          <code>border-right-width</code><br>
+          <code>border-top-width</code></p>
+        </th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+        <td class="iffy" title="gets it wrong in terms of box model">&nbsp;</td>
+        <td class="iffy" title="gets it wrong in terms of box model in quirks mode">&nbsp;</td>
+        <td class="iffy" title="gets it wrong in terms of box model in quirks mode">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">thin</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">medium</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">thick</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>border-collapse</code></th>
+        <td>CSS2.1</td>
+        <td><code>separate</code></td>
+        <td class="iffy" title="Overwritten by cellspacing if present">&nbsp;</td>
+        <td class="iffy" title="Overwritten by cellspacing if present">&nbsp;</td>
+        <td class="iffy" title="Overwritten by cellspacing if present">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td><code>'table' and 'inline-table' elements</code></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">collapse</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">separate</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>border-spacing</code></th>
+        <td>CSS2.1</td>
+        <td><code>0</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td><code>'table' and 'inline-table' elements</code></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length length</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>bottom</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>caption-side</code></th>
+        <td>CSS2.1</td>
+        <td><code>top</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">top</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">bottom</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left / right</th>
+        <td>not in spec</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>clear</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">both</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>clip</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>on absolutely positioned elements</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rect(T, R, B, L)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>color</code></th>
+        <td>CSS2.1</td>
+        <td>depends on element and browser</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgb()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood">&nbsp;</td>
+        <td class="almostgood">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">#CCCCCC</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">colorName</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">transparent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgba()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>content</code><br>
+        :before &amp; :after</th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy" title="Doesn't completely support content in that while it renders the content correctly, it doesn't allow full CSS styling of generated content.">
+        &nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="almostgood" title="Displays quotes on quotes. Makes sense, but it is not the spec.">
+        &nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">string</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">open-quote / close-quote</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="almostgood" title="Doesn't nest quotes correctly, but does include the quotes">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">no-open-quote / no-close-quote</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">attr(x)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">counter</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>counter-increment</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">counterName int</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>counter-reset</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">counterName int</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <code>cue</code><br/>
+          <code>cue-after</code><br/>
+          <code>cue-before</code>
+        </th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="aural" colspan="7" rowspan="4">aural</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url(x.wav)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>cursor</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url(x.cur)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">crosshair</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">default</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">pointer</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">move</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="iffy" title="shows pointer, not move">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">e-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">ne-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">nw-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">n-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">se-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">sw-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">s-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">w-resize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">text</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">wait</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">progress</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">help</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>direction</code></th>
+        <td>CSS2.1</td>
+        <td><code>ltr (left-to-right)</code></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">ltr</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rtl</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>display</code></th>
+        <td>CSS2.1</td>
+        <td><code>inline (depends on element)</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inline</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">block</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">list-item</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">run-in</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inline-block</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inline-table</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-row-group</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-header-group</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-footer-group</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-row</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-column-group</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-row</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-column</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-cell</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">table-caption</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>elevation</code></th>
+        <td>CSS2.1</td>
+        <td><code>level</code></td>
+        <td class="aural" colspan="7" rowspan="4">aural</td>
+        <td rowspan="4"></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">angle (270deg)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">below | level | above | higher |
+        lower</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>empty-cells</code></th>
+        <td>CSS2.1</td>
+        <td><code>show</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>sets whether or not to show empty cells in a table when
+        "separated</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">show</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>Borders are drawn around empty cells</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">hide</th>
+        <td>Default</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>No borders are drawn around empty cells</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>float</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font</code></th>
+        <td>CSS2.1</td>
+        <td>depends on element and browser</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">fStyle fVariant fWeight fSize/lineHeight
+        fFamily</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">caption</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">icon</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">menu</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">message-box</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">small-caption</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">status-bar</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font-family</code></th>
+        <td>CSS2.1</td>
+        <td>depends on element and browser</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">font-1, font-2, generic</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">singleFontFamily</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font-size</code></th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">xx-small | x-small | small | medium |
+        large | x-large | xx-large</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">larger | smaller</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (12px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">percent (108%)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font-style</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">italic</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td class="almostgood" title="shows as oblique if there isn't italic">&nbsp;</td>
+        <td title="shows as oblique if there isn't italic">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">oblique</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td class="almostgood" title="shows as italic">&nbsp;</td>
+        <td title="shows as italic">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font-variant</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">small-caps</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>font-weight</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">bold</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">bolder</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lighter</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">100 | 200 | 300 | 400 | 500 | 600 | 700 |
+        800 | 900</th>
+        <td>&nbsp;</td>
+        <td>couldn’t fully test because i don’t have "light" fonts</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>height</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="iffy" title="Treats it as min-height">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="Treats it as min-height">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="Treats it as min-height">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="Treats it as min-height">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>left</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>letter-spacing</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="iffy" title="seems to add a space before when adding a span of normal in a parent set with letter-spacing">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>line-height</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">number (2)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>list-style</code></th>
+        <td>CSS2.1</td>
+        <td>depending on individual properties</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">type position image</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>list-style-image</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url()</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>list-style-position</code></th>
+        <td>CSS2.1</td>
+        <td><code>outside</code></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inside</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">outside</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>list-style-type</code></th>
+        <td>CSS2.1</td>
+        <td><code>disc</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">disc</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">circle</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">square</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">decimal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">decimal-leading-zero</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lower-roman</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">upper-roman</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lower-greek</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lower-latin</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">upper-latin</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">armenian</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">georgian</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td class="iffy">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lower-alpha</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">upper-alpha</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <code>margin</code><br/>
+          <code>margin-bottom</code><br/>
+          <code>margin-left</code><br/>
+          <code>margin-right</code><br/>
+          <code>margin-top</code>
+        </th>
+        <td>CSS2.1</td>
+        <td>depends on element and browser</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications in quirks mod">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications in quirks mod">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications in quirks mode">&nbsp;</td>
+        <td class="iffy" title="gets the box model different from the W3C specifications in quirks mod">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>max-height</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>max-width</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>min-height</code></th>
+        <td>CSS2.1</td>
+        <td><code>0</code></td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>min-width</code></th>
+        <td>CSS2.1</td>
+        <td><code>0</code></td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>orphans</code></th>
+        <td>CSS2.1</td>
+        <td><code>2</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">integer</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>outline</code></th>
+        <td>CSS2.1</td>
+        <td>depending on individual properties</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>see individual properties below</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">color style width</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>outline-color</code></th>
+        <td>CSS2.1</td>
+        <td><code>invert</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">rgb / #fff / colorName</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">invert</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>outline-style</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">dashed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">dotted</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">double</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">groove</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">hidden</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inset</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">outset</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">ridge</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">solid</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>outline-width</code></th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">thin</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">medium</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">thick</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>overflow</code></th>
+        <td>CSS2.1</td>
+        <td>depending on individual properties</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">visible</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad" title="treats the height value as min-height, growing the container element">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">hidden</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">scroll</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>overflow-x</code></th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>overflow-y</code></th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row">
+          <p><code>padding</code></p>
+          <p><code>padding-bottom</code><br>
+          <code>padding-left</code><br>
+          <code>padding-right</code><br>
+          <code>padding-top</code></p>
+        </th>
+        <td>CSS2.1</td>
+        <td>depends on element and browser</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="iffy" title="box model issues">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>page</code></th>
+        <td>2.0</td>
+        <td><code>auto</code></td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">identifier</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>page-break-after</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>not inherited</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">always</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>force a page break after the element</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>page break where it would normally break</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left / right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>force page breaks so that next page is a left page</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>force page breaks so that next page is a right page</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">avoid</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>Avoid a page break after the element</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>page-break-before</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>not inherited</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">always</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>force a page break after the element</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>page break where it would normally break</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>force page breaks so that next page is a left page</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>force page breaks so that next page is a right page</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">avoid</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>Avoid a page break after the element</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>page-break-inside</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>not inherited</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">avoid</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>Avoid a page break inside the element</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>page break where it would normally break</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>pause</code></th>
+        <td>CSS2.1</td>
+        <td>implementation dependent</td>
+        <td class="aural" colspan="7" rowspan="22">aural</td>
+        <td>Shorthand for pause-before pause after</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">time (in ms)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">%</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>pause-after</code></th>
+        <td>CSS2.1</td>
+        <td>implementation dependent</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">time (in ms)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>time in milliseconds</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">%</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>pause the % of time it would take to say a word (&gt;100% ok)</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>pause-before</code></th>
+        <td>CSS2.1</td>
+        <td>implementation dependent</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">time (in ms)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">%</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>pitch</code></th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">Hz / kHz</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">x-low | low | medium | high | x-high</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>pitch-range</code></th>
+        <td>CSS2.1</td>
+        <td><code>50</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">0 or more</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row"></th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row"></th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>play-during</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url(x.wav)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url(x.wav) mix</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">url(x.wav) repeat</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>position</code></th>
+        <td>CSS2.1</td>
+        <td><code>static</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">absolute</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">fixed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="iffy" title="relatively positioned elements inside a fixed element may not show">&nbsp;</td>
+        <td class="iffy" title="relatively positioned elements inside a fixed element may not show">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="dynamically changing positions can lead to issues with chid positioning">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">relative</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="relatively positioning parents can cause problems (like entire sections or pages not being visible">&nbsp;</td>
+        <td class="iffy" title="relatively positioning parents can cause problems (like entire sections or pages not being visible">&nbsp;</td>
+        <td class="iffy" title="relatively positioning parents can cause problems (like entire sections or pages not being visible">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">static</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>quotes</code></th>
+        <td>CSS2.1</td>
+        <td>implementation dependent</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">string (‘”’ ‘“’ "’" "‘")</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>richness</code></th>
+        <td>CSS2.1</td>
+        <td><code>50</code></td>
+        <td class="aural" colspan="7" rowspan="3">aural</td>
+        <td rowspan="3"></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">number (50)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>right</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="ignores bottom if top is declared">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>size</code></th>
+        <td>2.0</td>
+        <td><code>auto</code></td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (8.5in 11in)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">portrait / landscape</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td class="print">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>speak</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="aural" colspan="7" rowspan="24">aural</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">spell-out</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>speak-header</code></th>
+        <td>CSS2.1</td>
+        <td><code>once</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">once</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">always</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>speak-numeral</code></th>
+        <td>CSS2.1</td>
+        <td><code>continuous</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">digits</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">continuous</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>speak-punctuation</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">code</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>speech-rate</code></th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">number</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">x-slow | slow | medium | fast | x-fast |
+        faster | slower</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>stress</code></th>
+        <td>CSS2.1</td>
+        <td><code>50</code></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">number</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>table-layout</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">fixed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>text-align</code></th>
+        <td>CSS2.1</td>
+        <td><code>start</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">left</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">right</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">center</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">justify</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>text-decoration</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">underline</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">overline</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">line-through</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">blink</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>text-indent</code></th>
+        <td>CSS2.1</td>
+        <td><code>0</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>text-shadow</code></th>
+        <td>2.0</td>
+        <td><code>none</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>Not in the 2.1 spec</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">color leftOffset topOffset
+        blurRadius</th>
+        <td>2.0</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good" title="google Chrome does not support shadows at all">
+        &nbsp;-</td>
+        <td class="good">&nbsp;</td>
+        <td>text-shadow sandbox</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">multiple shadows</th>
+        <td>CSS3</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good" title="google Chrome does not support shadows at all">
+        &nbsp;-</td>
+        <td class="bad">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>text-transform</code></th>
+        <td>CSS2.1</td>
+        <td><code>none</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>text-transform standbox</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">capitalize</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">uppercase</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">lowercase</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">none</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>top</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>unicode-bidi</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">embed</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">bidi-override</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>vertical-align</code></th>
+        <td>CSS2.1</td>
+        <td><code>baseline</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>inline-level and table-cell elements only</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">baseline</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="a bit above baseline">&nbsp;</td>
+        <td class="good">&nbsp;;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad" title="almost middle">&nbsp;</td>
+        <td class="iffy" title="a bit above baseline">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">sub</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">super</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">top</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">text-top</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">middle</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="almostgood" title="middle on images in the middle, which is a little higher than it is supposed to be">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="middle on images in the middle, which is a little higher than it is supposed to be">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">bottom</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">text-bottom</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="vertically aligns in table cells (it shouldn't)">&nbsp;</td>
+        <td class="iffy" title="vertically aligns in table cells (it shouldn't)">&nbsp;</td>
+        <td class="iffy" title="vertically aligns in table cells (it shouldn't)">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="almostgood" title="inline text is below the text bottom">&nbsp;</td>
+        <td title="inline text is below the text bottom">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="iffy" title="on table cells, doesn't inherit (should, since this value is no good on table cells)">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>visibility</code></th>
+        <td>CSS2.1</td>
+        <td><code>visible</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">visible</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">hidden</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="in col should not hide, but does">&nbsp;</td>
+        <td class="iffy" title="in col should not hide, but does">&nbsp;</td>
+        <td class="iffy" title="in col should not hide, but does">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">collapse</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="iffy" title="doesn't work on columns">&nbsp;</td>
+        <td class="iffy" title="doesn't work on columns">&nbsp;</td>
+        <td title="doesn't work on columns">collapse in tables, hidden
+        elsewhere</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>voice-family</code></th>
+        <td>CSS2.1</td>
+        <td>implementation dependent</td>
+        <td class="aural" colspan="7" rowspan="7">aural</td>
+        <td rowspan="7"></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">specificVoice, genericVoice</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>volume</code></th>
+        <td>CSS2.1</td>
+        <td><code>medium</code></td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">number / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">silent | x-soft | soft | medium | loud |
+        x-loud</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>white-space</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>test</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="works on block level only">&nbsp;</td>
+        <td class="iffy" title="works on block level only">&nbsp;</td>
+        <td class="iffy" title="works on block level only">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">pre</th>
+        <td>test</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">nowrap</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">pre-wrap</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">pre-line</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>widows</code></th>
+        <td>CSS2.1</td>
+        <td><code>2</code></td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">integer</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="bad">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>width</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length / percent</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">inherit</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="iffy" title="gets the W3C box model wrong">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>word-spacing</code></th>
+        <td>CSS2.1</td>
+        <td><code>normal</code></td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">length (3px)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="negative values are a bit off">&nbsp;</td>
+        <td class="iffy" title="negative values are a bit off">&nbsp;</td>
+        <td class="iffy" title="negative values are a bit off">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">normal</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="property" scope="row"><code>z-index</code></th>
+        <td>CSS2.1</td>
+        <td><code>auto</code></td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>applies to positioned elements</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">integer (3)</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="iffy" title="Has issues with positioning and z-index">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="value" scope="row">auto</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td class="good">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
